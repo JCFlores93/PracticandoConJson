@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>TUTORIAL JSON</h1>
+	<div id="contenedor"> </div>
+	<script type="text/javascript">
+
+	//numeros , booleanos y null no llevan comillas 
+	var cadena={"nombre":"Luis Berganza"};
+	var numero={"valor":23};
+
+
+	var varios={
+		"nombre":"Jean Carlo Flores",
+		"id_profesor":2013018928,
+		"profesor":true,
+		"idCursos":[10,20,30,40,50],
+		"num_Cursos":{
+			"marketing":"MI PRIMERA APLICACION PARA IPHONE",
+			"programacion":[
+				"Objective-C",
+				"Xcode",
+				"Json"
+			]
+		},
+		"vacaciones":null
+	};
+	alert("hola mundo");
+
+	alert(varios.nombre);
+	alert(varios.idCursos[1]);
+	alert(varios.num_Cursos.marketing);
+	alert(varios.num_Cursos.programacion[2]);
+	
+	document.getElementbyId('contenedor').innerHTML=varios.nombre;
+
+	</script>
+</body>
+</html>
